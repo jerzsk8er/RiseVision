@@ -12,16 +12,36 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <style>
         body {
             background-size: cover;
             background-image: url("https://live.staticflickr.com/65535/51632880360_3403940a4a_o.png");
         }
 
+        #heading {
+            text-shadow: -1px -4px 0 white, -1px 4px 0 white, -1px 4px 0 white, -1px -4px 0 white;
+            font-weight: bold;
+            font-family: Rubik;
+            padding-top: 80px;
+            padding-bottom: 100px;
+            font-size: 150px;
+            color: #1C2E4A;
+        }
+
+        /*
         h1 {
             font-size: 150px;
+            color: #1C2E4A;
+            color: #FFBF00;
+
         }
+      	*/
 
         .container {
             font-family: Rubik;
@@ -33,19 +53,17 @@
         }
 
         .dates {
-            font-family: Rubik;
             font-size: 80px;
             padding-left: 200px;
         }
 
         #day {
-            font-family: Rubik;
+            color: #FFBF00;
             text-align: left;
             display: block;
         }
 
         #date {
-            font-family: Rubik;
             margin-left: -800px;
         }
 
@@ -54,27 +72,32 @@
             float: left;
         }
     </style>
-
-    <div class='container'>
-        <div><h1>SCHOOLS CLOSED</h1></div>
-        <div class="dates">
-            <div class="column">
-                <div id="day">
-                    Thursday
-                </div>
-                <br/><br/>
-                <div id="day">
-                    Friday
-                </div>
+</head>
+<body>
+<div class='container'>
+    <div id="heading">
+        SCHOOLS CLOSED
+    </div>
+    <div class="dates">
+        <div class="column">
+            <div id="day">
+                Thursday
             </div>
-            <div class="column">
-                <div id="date">
-                    November 4th
-                </div>
-                <br/><br/>
-                <div id="date">
-                    November 5th
-                </div>
+            <br/><br/>
+            <div id="day">
+                Friday
+            </div>
+        </div>
+        <div class="column">
+            <div id="date">
+                November 4th
+            </div>
+            <br/><br/>
+            <div id="date">
+                November 5th
             </div>
         </div>
     </div>
+</div>
+</body>
+</html>
